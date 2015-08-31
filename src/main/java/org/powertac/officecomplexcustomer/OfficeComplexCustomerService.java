@@ -31,16 +31,19 @@ import org.powertac.common.CustomerInfo;
 import org.powertac.common.Tariff;
 import org.powertac.common.config.ConfigurableValue;
 import org.powertac.common.enumerations.PowerType;
+import org.powertac.common.interfaces.BrokerProxy;
 import org.powertac.common.interfaces.CustomerServiceAccessor;
 import org.powertac.common.interfaces.InitializationService;
 import org.powertac.common.interfaces.NewTariffListener;
 import org.powertac.common.interfaces.ServerConfiguration;
 import org.powertac.common.interfaces.TariffMarket;
 import org.powertac.common.interfaces.TimeslotPhaseProcessor;
+import org.powertac.common.repo.ContractRepo;
 import org.powertac.common.repo.CustomerRepo;
 import org.powertac.common.repo.RandomSeedRepo;
 import org.powertac.common.repo.TariffRepo;
 import org.powertac.common.repo.TariffSubscriptionRepo;
+import org.powertac.common.repo.TimeSeriesRepo;
 import org.powertac.common.repo.TimeslotRepo;
 import org.powertac.common.repo.WeatherReportRepo;
 import org.powertac.officecomplexcustomer.customers.OfficeComplex;
@@ -341,4 +344,22 @@ public class OfficeComplexCustomerService extends TimeslotPhaseProcessor
     // Auto-generated method stub
     return null;
   }
+
+@Override
+public ContractRepo getContractRepo() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+@Override
+public TimeSeriesRepo getTimeSeriesRepo() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+@Override
+public BrokerProxy getBrokerProxyService() {
+	// TODO Auto-generated method stub
+	return null;
+}
 }
